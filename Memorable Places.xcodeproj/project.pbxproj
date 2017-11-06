@@ -12,6 +12,8 @@
 		B309D8FB1F099211004D2389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B309D8F91F099211004D2389 /* Main.storyboard */; };
 		B309D8FD1F099212004D2389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B309D8FC1F099212004D2389 /* Assets.xcassets */; };
 		B309D9001F099212004D2389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B309D8FE1F099212004D2389 /* LaunchScreen.storyboard */; };
+		B309D90A1F09962E004D2389 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D9091F09962E004D2389 /* PlacesTableViewController.swift */; };
+		B309D90D1F09B22B004D2389 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309D90C1F09B22B004D2389 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B309D8FC1F099212004D2389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B309D8FF1F099212004D2389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B309D9011F099212004D2389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B309D9091F09962E004D2389 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewController.swift; path = ../PlacesTableViewController.swift; sourceTree = "<group>"; };
+		B309D90C1F09B22B004D2389 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B309D90D1F09B22B004D2389 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				B309D8F41F099211004D2389 /* Memorable Places */,
 				B309D8F31F099211004D2389 /* Products */,
+				B309D90B1F09B22B004D2389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +62,21 @@
 			children = (
 				B309D8F51F099211004D2389 /* AppDelegate.swift */,
 				B309D8F71F099211004D2389 /* ViewController.swift */,
+				B309D9091F09962E004D2389 /* PlacesTableViewController.swift */,
 				B309D8F91F099211004D2389 /* Main.storyboard */,
 				B309D8FC1F099212004D2389 /* Assets.xcassets */,
 				B309D8FE1F099212004D2389 /* LaunchScreen.storyboard */,
 				B309D9011F099212004D2389 /* Info.plist */,
 			);
 			path = "Memorable Places";
+			sourceTree = "<group>";
+		};
+		B309D90B1F09B22B004D2389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B309D90C1F09B22B004D2389 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					B309D8F11F099211004D2389 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M32N7UJQSV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +154,7 @@
 			files = (
 				B309D8F81F099211004D2389 /* ViewController.swift in Sources */,
 				B309D8F61F099211004D2389 /* AppDelegate.swift in Sources */,
+				B309D90A1F09962E004D2389 /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M32N7UJQSV;
 				INFOPLIST_FILE = "Memorable Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanessachu.Memorable-Places";
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M32N7UJQSV;
 				INFOPLIST_FILE = "Memorable Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vanessachu.Memorable-Places";
